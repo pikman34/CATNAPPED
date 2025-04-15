@@ -23,7 +23,7 @@ public class InventorySystem : MonoBehaviour
         }
         else 
         {
-            InventoryItemData newItem = new InventoryItem(referenceData);
+            InventoryItem newItem = new InventoryItem(referenceData);
             inventory.Add(newItem);
             m_itemDictionary.Add(referenceData, newItem);
         }
