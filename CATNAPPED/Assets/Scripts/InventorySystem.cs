@@ -7,12 +7,23 @@ using UnityEngine.EventSystems;
 public class InventorySystem : MonoBehaviour
 {
     private Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
-    public List<InventoryItem> inventory { get; private set; }
+    public List<InventoryItem> inventory;
+    public static InventorySystem current;
 
     private void Awake()
     {
         inventory = new List<InventoryItem>();
         m_itemDictionary = new Dictionary<InventoryItemData, InventoryItem>();   
+        current = this;
+    }
+
+    public InventoryItem Get(InventoryItemData referencedata) 
+    {
+        if (m_itemDictionary.TryGetValue(referencedata, out InventoryItem value)) 
+        {
+            return value;
+        }
+        return null;
     }
 
     public void Add(InventoryItemData referenceData) 
