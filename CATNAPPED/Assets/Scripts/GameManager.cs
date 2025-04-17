@@ -7,9 +7,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject PipesHolder;
     public GameObject[] Pipes;
+    ScrewSpawn checkScrew;
+    PipeScript win;
 
     [SerializeField]
     int totalPipes = 0;
+    [SerializeField]
+    int correctedPipes = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,9 +28,25 @@ public class GameManager : MonoBehaviour
         }        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void correctMove() 
     {
-        
+        correctedPipes += 1;
+
+        Debug.Log("correct move");
+
+        if(correctedPipes == totalPipes) 
+        {
+            Debug.Log("You Win!");
+            checkScrew.screwIsCollectible = true;
+            win.completedGame = true;
+        }
+    }
+
+
+    public void wrongMove() 
+    {
+        correctedPipes -= 1;
+
+        Debug.Log("incorrect move");
     }
 }

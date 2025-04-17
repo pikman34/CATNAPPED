@@ -10,8 +10,18 @@ public class PipeScript : MonoBehaviour
     public float[] correctRotation;
     [SerializeField]
     bool isPlaced = false;
+    public bool completedGame = false;
 
     int PossibleRots = 1;
+
+    GameManager gameManager;
+
+
+
+    private void Awake()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();  
+    }
 
     private void Start()
     {
@@ -24,6 +34,7 @@ public class PipeScript : MonoBehaviour
             if(transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1]) 
             {
                 isPlaced = true;
+                gameManager.correctMove();
             }
         }    
         else 
@@ -31,6 +42,7 @@ public class PipeScript : MonoBehaviour
             if(transform.eulerAngles.z == correctRotation[0]) 
             {
                 isPlaced = true;
+                gameManager.correctMove();
             }
         }
     }
@@ -40,26 +52,30 @@ public class PipeScript : MonoBehaviour
         transform.Rotate(0, 0, 90);
         transform.eulerAngles = new Vector3(0, 0, Mathf.Round(transform.eulerAngles.z));   
 
-    if(PossibleRots > 1) 
+         if(PossibleRots > 1 == !completedGame) 
         {
             if(transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1] && isPlaced == false) 
             {
                 isPlaced = true;
+                gameManager.correctMove();
             }    
             else if(isPlaced == true) 
             {
                 isPlaced = false;
+                gameManager.wrongMove();
             }
         }
         else 
         {
-            if(transform.eulerAngles.z == correctRotation[0] && isPlaced == false) 
+            if(transform.eulerAngles.z == correctRotation[0] && isPlaced == false == !completedGame) 
             {
                 isPlaced = true;
+                gameManager.correctMove();
             }    
             else if(isPlaced == true) 
             {
                 isPlaced = false;
+                gameManager.wrongMove();
             }
         }
     }
