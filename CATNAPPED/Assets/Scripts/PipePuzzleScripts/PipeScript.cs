@@ -10,7 +10,6 @@ public class PipeScript : MonoBehaviour
     public float[] correctRotation;
     [SerializeField]
     bool isPlaced = false;
-    public bool completedGame = false;
 
     int PossibleRots = 1;
 
@@ -52,7 +51,7 @@ public class PipeScript : MonoBehaviour
         transform.Rotate(0, 0, 90);
         transform.eulerAngles = new Vector3(0, 0, Mathf.Round(transform.eulerAngles.z));   
 
-         if(PossibleRots > 1 == !completedGame) 
+         if(PossibleRots > 1 ) 
         {
             if(transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1] && isPlaced == false) 
             {
@@ -67,7 +66,7 @@ public class PipeScript : MonoBehaviour
         }
         else 
         {
-            if(transform.eulerAngles.z == correctRotation[0] && isPlaced == false == !completedGame) 
+            if(transform.eulerAngles.z == correctRotation[0] && isPlaced == false) 
             {
                 isPlaced = true;
                 gameManager.correctMove();

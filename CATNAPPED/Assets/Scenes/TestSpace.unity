@@ -331,53 +331,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 104d082a387138747be642b638bdf643, type: 3}
---- !u!1 &125150447
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 125150449}
-  - component: {fileID: 125150448}
-  m_Layer: 0
-  m_Name: Screw Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &125150448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125150447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a956b74aea6d34fb187c6961f19f8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screwPrefab: {fileID: 4088123757834874177, guid: 524d027605a8f874fbf018c74db86ae6, type: 3}
-  screwIsCollectible: 0
-  screwSpawned: 0
---- !u!4 &125150449
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125150447}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.45, y: 3.36, z: -0.037359808}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &143991876
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +820,7 @@ GameObject:
   - component: {fileID: 525582657}
   - component: {fileID: 525582656}
   - component: {fileID: 525582655}
+  - component: {fileID: 525582660}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -1030,6 +984,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &525582660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525582654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da77c9a3b48e0d47ad3b8affa47706e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &526545878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,8 +1203,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 590296251}
-        m_TargetAssemblyTypeName: GetValue, Assembly-CSharp
-        m_MethodName: LoadSceneAndKeepValue
+        m_TargetAssemblyTypeName: LoadPipePuzzle, Assembly-CSharp
+        m_MethodName: PipePuzzleLoad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1321,7 +1287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbdd04c03ddb0144e816a3b25b02f141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
 --- !u!1001 &737372100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2523,6 +2488,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d32c31c8d8b66fb478b2a19813837e1e, type: 3}
+--- !u!1001 &5032664199650486040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3068258835391404621, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_Name
+      value: Screw Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.037359808
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336315271667164443, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2acddb3d300a40045a091ab7b76f34ee, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2542,4 +2564,4 @@ SceneRoots:
   - {fileID: 510512783}
   - {fileID: 737372100}
   - {fileID: 1041244030762467952}
-  - {fileID: 125150449}
+  - {fileID: 5032664199650486040}

@@ -2,13 +2,15 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+
 public class GameManager : MonoBehaviour
 {
 
     public GameObject PipesHolder;
     public GameObject[] Pipes;
-    ScrewSpawn checkScrew;
-    PipeScript win;
+    public bool completedGame = false;
+
+    ScrewSpawn screwChecker;
 
     [SerializeField]
     int totalPipes = 0;
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+       
         totalPipes = PipesHolder.transform.childCount;
 
         Pipes = new GameObject[totalPipes];
@@ -28,17 +31,20 @@ public class GameManager : MonoBehaviour
         }        
     }
 
+    private void Awake()
+    {
+        screwChecker = GameObject.Find("Screw Spawner").GetComponent<ScrewSpawn>();  
+    }
+
     public void correctMove() 
     {
         correctedPipes += 1;
 
-        Debug.Log("correct move");
-
         if(correctedPipes == totalPipes) 
         {
             Debug.Log("You Win!");
-            checkScrew.screwIsCollectible = true;
-            win.completedGame = true;
+            completedGame = true;
+            screwChecker.UpdateSpawn();
         }
     }
 
@@ -46,7 +52,5 @@ public class GameManager : MonoBehaviour
     public void wrongMove() 
     {
         correctedPipes -= 1;
-
-        Debug.Log("incorrect move");
     }
 }
