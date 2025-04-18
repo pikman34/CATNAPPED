@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     ScrewSpawn screwChecker;
 
+    PuzzleProgressionTracker progressionTracker;
+
     [SerializeField]
     int totalPipes = 0;
     [SerializeField]
@@ -33,7 +35,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        screwChecker = GameObject.Find("Screw Spawner").GetComponent<ScrewSpawn>();  
+        screwChecker = GameObject.Find("Screw Spawner").GetComponent<ScrewSpawn>();
+        progressionTracker = GameObject.Find("ProgressionTracker").GetComponent<PuzzleProgressionTracker>();
     }
 
     public void correctMove() 
@@ -43,7 +46,7 @@ public class GameManager : MonoBehaviour
         if(correctedPipes == totalPipes) 
         {
             Debug.Log("You Win!");
-            completedGame = true;
+            progressionTracker.pipePuzzleComplete = true;
             screwChecker.UpdateSpawn();
         }
     }
