@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_WoodenBall
   displayName: Wooden Ball
-  icon: {fileID: 3298757193914516144, guid: fe7ed6473246d1e4e9dc0f4c4aeef14f, type: 3}
+  icon: {fileID: -2818204167450169531, guid: c26a8bf1a7af80e4d9df2a169ca86a63, type: 3}
   prefab: {fileID: 3095132749933953516, guid: 3ee53d0bd3f72614cb2781106861581f, type: 3}

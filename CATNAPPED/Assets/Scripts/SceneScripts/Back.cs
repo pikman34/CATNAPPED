@@ -5,6 +5,6 @@ public class Back : MonoBehaviour
 {
     public void BackToScene() 
     {
-        SceneManager.LoadScene("TestSpace");
+        SceneManager.LoadScene("HouseScene");
     }
 }
