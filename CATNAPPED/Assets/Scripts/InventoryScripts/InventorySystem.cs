@@ -10,7 +10,15 @@ public class InventorySystem : MonoBehaviour
     private Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
     public List<InventoryItem> inventory;
     public static InventorySystem current;
-
+    public event Action OnInventoryChangedEvent;
+    public void InventoryChangedEvent() 
+    {
+        if (OnInventoryChangedEvent != null) 
+        {
+            OnInventoryChangedEvent();
+        }
+    }
+    
     private void Awake()
     {
         inventory = new List<InventoryItem>();
@@ -24,6 +32,8 @@ public class InventorySystem : MonoBehaviour
         {
             return value;
         }
+
+        
         return null;
     }
 

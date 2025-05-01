@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1e91cd8d2d7b41e4fa973f4b69d00a57
+guid: dfe93634d1c1e174da87159bffdc0c57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5707218116961789024
-    second: ui_0
+      213: 9137478604241645499
+    second: CATcalenderart_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_0
+      name: CATcalenderart_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 960
-        height: 125
+        width: 480
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0646e25a3ac143f40800000000000000
-      internalID: 5707218116961789024
+      spriteID: bbf2e8cc068dece70800000000000000
+      internalID: 9137478604241645499
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ui_0: 5707218116961789024
+      CATcalenderart_0: 9137478604241645499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
