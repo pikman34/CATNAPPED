@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class GameManager : MonoBehaviour
 {
 
-    public GameObject PipesHolder;
+    public GameObject PipesHolder, pipeExitButton;
     public GameObject[] Pipes;
     public bool completedGame = false;
 
@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     {
         screwChecker = GameObject.Find("Screw Spawner").GetComponent<ScrewSpawn>();
         progressionTracker = GameObject.Find("ProgressionTracker").GetComponent<PuzzleProgressionTracker>();
+        pipeExitButton = GameObject.Find("PipeExitButton");
+        pipeExitButton.SetActive(false);
     }
 
     public void correctMove() 
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("You Win!");
             progressionTracker.pipePuzzleComplete = true;
+            pipeExitButton.SetActive(true);
             screwChecker.UpdateSpawn();
         }
     }

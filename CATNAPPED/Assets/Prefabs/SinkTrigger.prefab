@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2736398269166250720}
   - component: {fileID: 2682842909939811350}
   - component: {fileID: 7147145242104288980}
+  - component: {fileID: 3202003559152404096}
   m_Layer: 0
   m_Name: SinkTrigger
   m_TagString: Untagged
@@ -95,7 +96,7 @@ MonoBehaviour:
   enteredTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7147145242104288980}
+      - m_Target: {fileID: 8305249662713502108}
         m_TargetAssemblyTypeName: LoadPipePuzzle, Assembly-CSharp
         m_MethodName: NextTrigger
         m_Mode: 1
@@ -125,7 +126,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 7147145242104288980}
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8305249662713502108}
         m_TargetAssemblyTypeName: LoadPipePuzzle, Assembly-CSharp
         m_MethodName: PipePuzzleLoad
         m_Mode: 1
@@ -147,5 +172,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbdd04c03ddb0144e816a3b25b02f141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3202003559152404096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305249662713502108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da77c9a3b48e0d47ad3b8affa47706e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

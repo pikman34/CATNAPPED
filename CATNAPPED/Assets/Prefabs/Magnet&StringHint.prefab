@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8336657435130724748}
   - component: {fileID: 6329992511504986784}
   - component: {fileID: 4206771486922377408}
+  - component: {fileID: 4487236920121311606}
   m_Layer: 0
   m_Name: Magnet&StringHint
   m_TagString: Untagged
@@ -124,3 +125,15 @@ MonoBehaviour:
   interacted:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4487236920121311606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229700414359188744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da77c9a3b48e0d47ad3b8affa47706e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
