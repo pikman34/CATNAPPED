@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7b6344c66c900b842a6bd285f7d4f0cf
+guid: 829180c11f8c22349a52c8f53986c55e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 958917785890654251
-    second: testpopup_0
+      213: -2169736900652779216
+    second: UIPanel1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: testpopup_0
+      name: UIPanel1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1314
-        height: 727
+        width: 457
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2801dc45a2ce4d00800000000000000
-      internalID: 958917785890654251
+      spriteID: 039b88cd8cb83e1e0800000000000000
+      internalID: -2169736900652779216
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      testpopup_0: 958917785890654251
+      UIPanel1_0: -2169736900652779216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
