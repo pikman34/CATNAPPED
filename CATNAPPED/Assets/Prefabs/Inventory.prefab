@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5896029113735101237}
   - component: {fileID: 6469633552952387521}
-  - component: {fileID: 4595051138951992884}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Inventory
@@ -46,15 +45,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: []
---- !u!114 &4595051138951992884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 412701179573249630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3da77c9a3b48e0d47ad3b8affa47706e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

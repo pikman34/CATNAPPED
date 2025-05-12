@@ -9,7 +9,7 @@ public class PiecesScript : MonoBehaviour
     public bool InRightPosition;
     public bool Selected;
     private BoxCollider2D pieces;
-    private bool isCorrectMove;
+    private bool hasReportedCorrect;
     TidyGameManager tidyGameManager;
 
     void Start()
@@ -33,6 +33,12 @@ public class PiecesScript : MonoBehaviour
             {
                 transform.position = RightPosition;
                 InRightPosition = true;
+
+                if (!hasReportedCorrect) 
+                {
+                    tidyGameManager.correctMove();
+                    hasReportedCorrect = true;
+                }
             }
 
         }
@@ -43,13 +49,4 @@ public class PiecesScript : MonoBehaviour
         }
     }
 
-    private void TidiedUp()
-    {
-        if (isCorrectMove) 
-        {
-            tidyGameManager.correctMove();
-            isCorrectMove = false;
-        }
-
-    }
 }

@@ -4,7 +4,7 @@ public class InventoryBar : MonoBehaviour
 {
     public void Start()
     {
-        InventorySystem.current.OnInventoryChangedEvent += OnUpdateInventory;
+        InventorySystem.Instance.OnInventoryChangedEvent += OnUpdateInventory;
     }
 
     private void OnUpdateInventory() 
@@ -19,7 +19,7 @@ public class InventoryBar : MonoBehaviour
 
     public void DrawInventory() 
     {
-        foreach(InventoryItem item in InventorySystem.current.inventory)
+        foreach(InventoryItem item in InventorySystem.Instance.inventory)
         {
             AddInventorySlot(item);
         }

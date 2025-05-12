@@ -31,7 +31,10 @@ public class TidyGameManager : MonoBehaviour
 
     private void Awake()
     {
-
+        woodenballChecker = GameObject.Find("WoodenBallSpawner").GetComponent<WoodenballSpawn>();
+        progressionTracker = GameObject.Find("ProgressionTracker").GetComponent<PuzzleProgressionTracker>();
+        tidyExitButton = GameObject.Find("TidyExitButton");
+        tidyExitButton.SetActive(false);
     }
 
     public void correctMove() 
@@ -41,7 +44,9 @@ public class TidyGameManager : MonoBehaviour
         if(correctTidyObjects == totalTidyObjects) 
         {
             Debug.Log("You Win!");
-
+            progressionTracker.tidyPuzzleComplete = true;
+            tidyExitButton.SetActive(true);
+            woodenballChecker.UpdateSpawn();
         }
     }
 }

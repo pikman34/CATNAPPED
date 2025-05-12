@@ -9,7 +9,7 @@ public struct ItemRequirement
 
     public bool HasRequirement() 
     {
-        InventoryItem item = InventorySystem.current.Get(itemData);
+        InventoryItem item = InventorySystem.Instance.Get(itemData);
         
         if (item == null || item.stackSize < amount) { return false; }
 
