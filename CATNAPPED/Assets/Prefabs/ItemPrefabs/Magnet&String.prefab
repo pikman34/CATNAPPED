@@ -173,6 +173,7 @@ MonoBehaviour:
     amount: 1
   - itemData: {fileID: 11400000, guid: 0cb2fe20ca8099c40bfd2346df0f5ada, type: 2}
     amount: 1
+  collectionTextManager: {fileID: 3018241268755714515, guid: 7d71e7ebeaad89b49b7faded0afa9300, type: 3}
   removeRequirementsOnPickup: 1
 --- !u!61 &4072265480079150225
 BoxCollider2D:

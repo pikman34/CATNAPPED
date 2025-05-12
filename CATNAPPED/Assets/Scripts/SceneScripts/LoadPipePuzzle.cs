@@ -9,13 +9,17 @@ using UnityEngine.SceneManagement;
 public class LoadPipePuzzle : MonoBehaviour
 {
     PuzzleProgressionTracker pipePuzzle;
-    GameObject bathroomCam, pipeExitButton, magnetAndStringHint;
+    GameObject bathroomCam, pipeExitButton, magnetAndStringHint, thirdHintTrigger;
 
     private void Awake()
     {
         pipePuzzle = GameObject.Find("ProgressionTracker").GetComponent<PuzzleProgressionTracker>();
         magnetAndStringHint = GameObject.Find("Magnet&StringHint");
+        thirdHintTrigger = GameObject.Find("3rdHintTrigger");
+        
     
+        thirdHintTrigger.SetActive(false);    
+
         if (!pipePuzzle.pipePuzzleComplete) 
         {
             bathroomCam = GameObject.Find("BathroomCamera");

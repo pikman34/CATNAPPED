@@ -82,6 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   referenceItem: {fileID: 11400000, guid: c4ee893bf2a505e4892dae75c69f48ab, type: 2}
   requirements: []
+  collectionTextManager: {fileID: 3018241268755714515, guid: 7d71e7ebeaad89b49b7faded0afa9300, type: 3}
   removeRequirementsOnPickup: 0
 --- !u!61 &4313114034510629630
 BoxCollider2D:

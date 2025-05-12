@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using UnityEngine;
 
 public class ItemObject : MonoBehaviour
@@ -7,7 +8,10 @@ public class ItemObject : MonoBehaviour
 
     public List<ItemRequirement> requirements;
 
+    public CollectionTextManager collectionTextManager;
+
     public bool removeRequirementsOnPickup;
+    
 
     public void OnHandlePickupItem() 
     {
