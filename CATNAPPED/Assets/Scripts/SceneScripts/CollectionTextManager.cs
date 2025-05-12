@@ -5,10 +5,20 @@ using UnityEngine.UIElements;
 
 public class CollectionTextManager : MonoBehaviour
 {
+    public static CollectionTextManager Instance;
+
     GameObject screwCollectionText, ballCollectionText;
 
     private void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
         screwCollectionText = GameObject.Find("CollectedScrew");
         ballCollectionText = GameObject.Find("CollectWoodenball");
         screwCollectionText.SetActive(false);

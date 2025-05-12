@@ -8,8 +8,6 @@ public class ItemObject : MonoBehaviour
 
     public List<ItemRequirement> requirements;
 
-    public CollectionTextManager collectionTextManager;
-
     public bool removeRequirementsOnPickup;
     
 
@@ -23,6 +21,7 @@ public class ItemObject : MonoBehaviour
            } 
         
                 InventorySystem.Instance.Add(referenceItem);
+                CollectionTextManager.Instance.WhenItemPickedUp();
                 Destroy(gameObject);
         }
     }
