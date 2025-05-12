@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      livinroomfurniture_0: 6441436796191720375
+      livinroomfurniture_1: 7324047779064014525
+      livinroomfurniture_2: -220649446036458622
+      livinroomfurniture_3: 1909217814180230644
+      livinroomfurniture_4: -1926889070764754587
+      livinroomfurniture_5: -7152859937396799773
+      livinroomfurniture_6: -5699939198698673067
+      livinroomfurniture_7: -4690377732366174109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
