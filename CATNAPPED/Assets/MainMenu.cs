@@ -13,6 +13,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("OptionsMenu");
     }
 
+    public void MainMenuLoad()
+    {
+        SceneManager.LoadScene("MainMenu");
+    } //this is for last scene in game not used in main menu
 
     public void QuitGame()
     {
