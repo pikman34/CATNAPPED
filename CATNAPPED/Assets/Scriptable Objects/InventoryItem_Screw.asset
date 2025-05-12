@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_Screw
   displayName: Screw
-  icon: {fileID: -802136390220115452, guid: 03a0e9d1701c7c64bb91eb10955bd78a, type: 3}
+  icon: {fileID: -8689415802651369312, guid: 64de0d710a21ac245bee960463669b6a, type: 3}
   prefab: {fileID: 4088123757834874177, guid: 524d027605a8f874fbf018c74db86ae6, type: 3}

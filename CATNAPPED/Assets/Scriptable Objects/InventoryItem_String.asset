@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: InventoryItem_String
   displayName: String
-  icon: {fileID: 1716207897935383340, guid: 020ffc01a2e332842a8778b5f7e71962, type: 3}
+  icon: {fileID: -6219975768336552020, guid: cdc10ed94793094479e6768911ff7c02, type: 3}
   prefab: {fileID: 2070441165286760779, guid: 4d9a0c567573d0d4a8cd157069c1c67f, type: 3}

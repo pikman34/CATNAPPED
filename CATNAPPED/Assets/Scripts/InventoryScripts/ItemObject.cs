@@ -18,7 +18,7 @@ public class ItemObject : MonoBehaviour
                 RemoveRequirements();
            } 
         
-                InventorySystem.current.Add(referenceItem);
+                InventorySystem.Instance.Add(referenceItem);
                 Destroy(gameObject);
         }
     }
@@ -39,7 +39,7 @@ public class ItemObject : MonoBehaviour
         {
             for (int i=0; i<requirement.amount; i++) 
             {
-                InventorySystem.current.Remove(requirement.itemData);
+                InventorySystem.Instance.Remove(requirement.itemData);
             }
         }
     }
