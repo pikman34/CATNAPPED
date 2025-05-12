@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ab73858f296dc4fb1028cb78bebecd, type: 3}
+  m_Name: InventoryItem_MagnetandString
+  m_EditorClassIdentifier: 
+  id: InventoryItem_MagnetNString
+  displayName: Magnet & String
+  icon: {fileID: 7265262557398168226, guid: 46177e15af3d93449820a8a02cf15ba8, type: 3}
+  prefab: {fileID: 8241468054364814782, guid: a9eeb86a187226f42af735e594f8b0dc, type: 3}
