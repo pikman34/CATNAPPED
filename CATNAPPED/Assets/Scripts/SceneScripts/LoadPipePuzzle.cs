@@ -1,10 +1,5 @@
-using Unity.Cinemachine;
-using Unity.VisualScripting;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
 
 public class LoadPipePuzzle : MonoBehaviour
 {

@@ -32,7 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PauseMenu.unity
     guid: e8bfa5b255c1a8148a3163487779d2e7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/OptionsPauseMenu.unity
     guid: 95bfb2d161394f645854f5bd4d4f7791
   - enabled: 1
