@@ -14,6 +14,7 @@ public class ItemTrigger : MonoBehaviour
 
         fixedHandleHint.SetActive(false);
         finalCutsceneTrigger.SetActive(false);
+        brokenHandleHint.SetActive(false);
     }
 
     private void OnEnable()
