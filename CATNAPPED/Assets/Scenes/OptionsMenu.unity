@@ -253,8 +253,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
-  m_sharedMaterial: {fileID: 2610877580803888624, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
+  m_sharedMaterial: {fileID: -7229759915140349359, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -389,8 +389,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SFX
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
-  m_sharedMaterial: {fileID: 2610877580803888624, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
+  m_sharedMaterial: {fileID: -7229759915140349359, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myMixer: {fileID: 24100000, guid: 3f06639eb429ace4bbc576db8feaeac6, type: 2}
   musicSlider: {fileID: 1244358085}
-  SFXSlider: {fileID: 0}
+  SFXSlider: {fileID: 1398952091}
 --- !u!224 &487626373 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3360768468663495578, guid: 5ef62c889f241ba4ab9d2ebe972b96a1, type: 3}
@@ -1085,8 +1085,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Music
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
-  m_sharedMaterial: {fileID: 2610877580803888624, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
+  m_sharedMaterial: {fileID: -7229759915140349359, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2138,8 +2138,8 @@ MonoBehaviour:
 
     E to interact'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
-  m_sharedMaterial: {fileID: 2610877580803888624, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
+  m_sharedMaterial: {fileID: -7229759915140349359, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -7,9 +7,18 @@ public class CodePanel : MonoBehaviour
 {
     [SerializeField]
     TextMeshProUGUI codeText;
+    GameObject toolBoxCombination;
     PuzzleProgressionTracker combinationLock;
     FlashlightSpawn flashlightChecker;
     string codeTextValue = "";
+
+    void Awake()
+    {
+        combinationLock = GameObject.Find("ProgressionTracker").GetComponent<PuzzleProgressionTracker>();
+        flashlightChecker = GameObject.Find("FlashlightSpawner").GetComponent<FlashlightSpawn>();
+        toolBoxCombination = GameObject.Find("ToolBoxLock");
+
+    }
 
     void Update()
     {
@@ -35,7 +44,6 @@ public class CodePanel : MonoBehaviour
 
     public void BlowUpIfComplete() 
     {
-        var toolbox = GameObject.Find("ToolBoxLock");
-        toolbox.IsDestroyed();
+        Destroy(toolBoxCombination);
     }
 }

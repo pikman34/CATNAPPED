@@ -1382,8 +1382,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Oh Pirate! There you are!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
-  m_sharedMaterial: {fileID: 2610877580803888624, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
+  m_sharedMaterial: {fileID: -7229759915140349359, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8815,8 +8815,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Time to go to the vets!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
-  m_sharedMaterial: {fileID: 2610877580803888624, guid: 2a6d9fab2d8583a4b9817c6e99292f9e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
+  m_sharedMaterial: {fileID: -7229759915140349359, guid: 9f6e30fe6ae480e4b855cacf169cccd7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

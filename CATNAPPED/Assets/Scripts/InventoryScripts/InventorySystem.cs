@@ -16,7 +16,6 @@ public class InventorySystem : MonoBehaviour
 
     private void Awake()
     {
-        // Singleton pattern with persistence
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
